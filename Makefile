@@ -17,7 +17,7 @@ libobj=dmht.o
 CFLAGS += -g -fopenmp 
 LDFLAGS += 
 #LDADD += -L/usr/lib/x86_64-linux-gnu/ -lcrypto
-LDADD +=  -lcrypto
+LDADD +=  -lgmp  -lcrypto 
 
 all: $(TARGET) $(TARGET2)
 

@@ -20,18 +20,18 @@ void main()
     
     r = MD5_Update(&c, data, strlen(data));
     if(r != 1) {
-        perror("update");
-        exit(1);
+      perror("update");
+      exit(1);
     }
     
     r = MD5_Final(md, &c);
     if(r != 1) {
-        perror("final");
-        exit(1);
-      }
+      perror("final");
+      exit(1);
+    }
  
     for(i = 0; i < 16; i++)
-         sprintf(&mdString[i * 2], "%02x", (unsigned int)md[i]);
+      sprintf(&mdString[i * 2], "%02x", (unsigned int)md[i]);
  
     printf("md5 digest: %s\n", mdString);
 }
