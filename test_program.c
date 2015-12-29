@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <openssl/md5.h>
-#include "dhmt.h"
+#include "dmht.h"
 
 void main()
 {
@@ -28,7 +28,7 @@ void main()
     if(r != 1) {
         perror("final");
         exit(1);
-     }
+      }
  
     for(i = 0; i < 16; i++)
          sprintf(&mdString[i * 2], "%02x", (unsigned int)md[i]);
