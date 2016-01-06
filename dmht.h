@@ -8,7 +8,10 @@ union _double_byte{
 };
 typedef union _double_byte double_byte;
 
-unsigned long hash_dl(int length,double* data);
+unsigned long hash_dl(unsigned int mod, unsigned int length,double* data);
+unsigned long hash_dl2(unsigned int mod, unsigned int length,double* data);
+unsigned long hash_dl3(unsigned int mod, unsigned int length,double* data);
+unsigned long hash_dl4(unsigned int mod, unsigned int length,double* data);
 
 
 

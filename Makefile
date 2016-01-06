@@ -14,7 +14,7 @@ libobj=dmht.o
 
 .PHONY=all clean
 
-CFLAGS += -g -fopenmp 
+CFLAGS += -pg -g -fopenmp 
 LDFLAGS += 
 #LDADD += -L/usr/lib/x86_64-linux-gnu/ -lcrypto
 LDADD +=  -lgmp  -lcrypto 
